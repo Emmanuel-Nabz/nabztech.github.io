@@ -30,7 +30,7 @@
             
             <div>
                 <h3><i class="fas fa-phone" style="color: #27ae60;"></i> Phone</h3>
-                <p><a href="tel:+97333310359"><i class="fas fa-phone"></i>+973-3331-0359</a></p>
+                <p><a href="tel:+97333310359"><i class="fas fa-phone"></i> +973-3331-0359</a></p>
             </div>
 
             <div style="background: #25D366; color: white; border-radius: 12px; padding: 20px; text-align: center;">
@@ -59,17 +59,16 @@
         </div>
     </section>
 
-    <!-- ===== WORKING CONTACT FORM (FormSubmit) ===== -->
+    <!-- ===== WORKING CONTACT FORM ===== -->
     <section>
         <h2>Send a Message</h2>
         <p style="color: #7f8c8d; margin-bottom: 20px;">Fill in the form below and we'll get back to you within 24 hours!</p>
 
-        <!-- ✅ THIS FORM ACTUALLY WORKS! Messages go to makemmy87@yahoo.com -->
         <form action="https://formsubmit.co/makemmy98@yahoo.com" method="POST">
-            <!-- Hidden fields for FormSubmit -->
+            <!-- ✅ FIXED: Redirects to homepage after sending -->
             <input type="hidden" name="_subject" value="New Nabz-Tech Inquiry">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://nabztech.github.io">
+            <input type="hidden" name="_next" value="https://nabztech.github.io/index.html">
             
             <label for="name"><i class="fas fa-user"></i> Your Name:</label><br>
             <input type="text" id="name" name="name" placeholder="Full name" required><br><br>
