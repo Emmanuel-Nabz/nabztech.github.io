@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <header class="hero" style="background-image: url('back.png'); background-size: cover; background-position: center;">
+    <!-- Your existing hero content stays here -->
+    <h1><i class="fas fa-rocket"></i> Nabz-Tech Solutions</h1>
+    <p class="subtitle">Your trusted partner for technology solutions in Bahrain</p>
+    <a href="contact.html" class="cta-button"><i class="fas fa-arrow-right"></i> Get Started</a>
+</header>
     <title>Nabz-Tech Solutions</title>
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- ===== WEB APP / PWA SETUP ===== -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Nabz-Tech">
-    <meta name="application-name" content="Nabz-Tech">
-    <meta name="theme-color" content="#3498db">
-    <link rel="manifest" href="manifest.json">
-    <link rel="icon" type="image/png" sizes="192x192" href="nabz.png">
 </head>
+<!-- ===== WEB APP / PWA SETUP ===== -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Nabz-Tech">
+<meta name="application-name" content="Nabz-Tech">
+<meta name="theme-color" content="#3498db">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="nabz.png">
 <body>
-
-    <!-- ===== NAVIGATION ===== -->
+    <script>
+    // Register Service Worker
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/nabztech.github.io/sw.js')
+            .then(() => console.log('✅ Service Worker registered!'))
+            .catch(err => console.log('❌ Service Worker error:', err));
+    }
+</script>
     <nav>
-        <a href="index.html"><i class="fas fa-home"></i> Home</a>
-        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
-        <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
-        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
-    </nav>
-
-    <!-- ===== HERO SECTION ===== -->
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+    <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
+    <a href="pricing.html"><i class="fas fa-tag"></i> Pricing</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+</nav>
+    <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+<a href="https://wa.me/97333310359?text=Hi%20Nabz-Tech%20Solutions!%20I%20need%20your%20services." 
+   target="_blank" 
+   style="position: fixed; 
+          bottom: 20px; 
+          right: 20px; 
+          background: #25D366; 
+          color: white; 
+          width: 60px; 
+          height: 60px; 
+          border-radius: 50%; 
+          display: flex; 
+          align-items: center; 
+          justify-content: center; 
+          font-size: 30px; 
+          box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); 
+          text-decoration: none; 
+          z-index: 999;
+          transition: transform 0.3s;">
+    <i class="fab fa-whatsapp"></i>
+</a>
+    <!-- Hero Section -->
     <header class="hero">
         <h1><i class="fas fa-rocket"></i> Nabz-Tech Solutions</h1>
         <p class="subtitle">Your trusted partner for technology solutions in Bahrain</p>
-        <a href="contact.html" class="cta-button"><i class="fas fa-arrow-right"></i> Get Started</a>
+        <a href="services.html" class="cta-button"><i class="fas fa-arrow-right"></i> Get Started</a>
     </header>
 
-    <!-- ===== WHAT WE DO ===== -->
+    <!-- What We Do -->
     <section>
         <h2><i class="fas fa-laptop-code"></i> What We Do</h2>
         <div class="services-grid">
@@ -65,7 +95,7 @@
         </div>
     </section>
 
-    <!-- ===== WHY CHOOSE US ===== -->
+    <!-- Why Choose Us -->
     <section>
         <h2><i class="fas fa-star"></i> Why Choose Us</h2>
         <ul>
@@ -75,52 +105,26 @@
             <li><i class="fas fa-check-circle" style="color: #27ae60;"></i> Trusted by businesses in Bahrain</li>
         </ul>
     </section>
-
-    <!-- ===== CALL TO ACTION ===== -->
+    <section>
+    <h2><i class="fas fa-images"></i> Our Projects</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+        <img src="server.png" alt="Project 1" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <img src="security.png" alt="Project 2" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <img src="cctv1.png" alt="Project 3" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    </div>
+</section>
+<!-- Call to Action -->
     <section class="cta-section">
         <h2>Ready to Secure Your Business?</h2>
         <p>Contact us today for a free consultation.</p>
         <a href="contact.html" class="cta-button"><i class="fas fa-paper-plane"></i> Contact Us</a>
     </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
+<footer>
         <p>&copy; 2026 Nabz-Tech Solutions. All rights reserved.</p>
     </footer>
 
-    <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
-    <a href="https://wa.me/97333310359?text=Hi%20Nabz-Tech%20Solutions!%20I%20need%20your%20services." 
-       target="_blank" 
-       style="position: fixed; 
-              bottom: 20px; 
-              right: 20px; 
-              background: #25D366; 
-              color: white; 
-              width: 60px; 
-              height: 60px; 
-              border-radius: 50%; 
-              display: flex; 
-              align-items: center; 
-              justify-content: center; 
-              font-size: 30px; 
-              box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); 
-              text-decoration: none; 
-              z-index: 999;
-              transition: transform 0.3s;"
-       onmouseover="this.style.transform='scale(1.1)'" 
-       onmouseout="this.style.transform='scale(1)'">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- ===== REGISTER SERVICE WORKER ===== -->
     <script>
-        // Register Service Worker for Web App
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/nabztech.github.io/sw.js')
-                .then(() => console.log('✅ Service Worker registered!'))
-                .catch(err => console.log('❌ Service Worker error:', err));
-        }
+        console.log("Welcome to Nabz-Tech Solutions! 🚀");
     </script>
-
 </body>
 </html>
