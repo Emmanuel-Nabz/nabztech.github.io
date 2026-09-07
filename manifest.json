@@ -1,0 +1,23 @@
+{
+  "name": "Nabz-Tech Solutions",
+  "short_name": "Nabz-Tech",
+  "description": "Your trusted partner for technology solutions in Bahrain",
+  "start_url": "/nabztech.github.io/",
+  "display": "standalone",
+  "background_color": "#1a2a3a",
+  "theme_color": "#3498db",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "nabz.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "nabz.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
